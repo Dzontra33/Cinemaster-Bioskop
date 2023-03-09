@@ -1,0 +1,854 @@
+/* 
+  #FFD700 - Primary color 
+
+
+
+/*<------------------------------- HTML PROPERTY ------------------------------->*/
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+html{
+  background-image: url(../img/texture.png);
+  background-repeat: repeat;
+  background-color:  #00000a;
+  font-family: 'Open Sans', sans-serif;
+  color: #fff;
+
+}
+
+hr{
+  margin-top: 40px;
+  border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, rgb(255, 215, 0, 0), rgb(255, 215, 0, 0.75), rgb(255, 215, 0, 0));
+
+}
+
+a{
+  text-decoration: none;
+  
+}
+
+
+.container{
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.proNaslov{
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+/*<------------------------------- HEADER SECTION ------------------------------->*/
+
+header{
+  height: 150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo > img{
+  width: 400px;
+
+} 
+
+
+/*<------------------------------- NAV MENU SECTION ------------------------------->*/
+
+nav{
+  display: flex;
+}
+
+nav ul{
+  display: flex;
+  list-style: none; 
+
+}
+
+nav ul li a{
+  padding: 0 20px;
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 20px;
+  display: inline-block;
+}
+
+nav li a::after{ /* Settings for nav underline effect */
+  content:'';
+  display: block;
+  height: 4px;
+  width: 0;
+  background: #FFD700;
+  transition:all .5s;
+}
+
+nav li a:hover::after{
+  width: 100%;
+
+}
+
+/*<------------------------------- BANNER SECTION ------------------------------->*/
+
+.banner{
+    height: 320px;
+    overflow:hidden;
+    position: relative; 
+}
+
+.banner-caption{
+    background: #000;
+    background: rgba(0,0,0,0.6);
+    position: absolute;
+    color: white;
+    bottom: 40px;
+    width: 52%;
+    padding: 20px 0;
+    right: 0;
+    text-align: center;
+}
+
+.banner-caption > h1 {
+  text-transform: uppercase;
+}
+
+/*<------------------------------- MOVIE CARD SECTION ------------------------------->*/
+
+
+.card-section {
+  display: flex;
+  justify-content: space-around;
+
+}
+
+.card-head-tittle {
+  margin-top: 40px; 
+  text-transform: uppercase; 
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+
+.card{
+  min-width: 200px;
+  height: 300px;
+  padding: 20px;
+  margin: 10px;
+  margin-top: 40px;
+  -webkit-box-shadow: 0px 0px 14px 2px rgba(255,215,0,0.49); 
+  box-shadow: 0px 0px 14px 2px rgba(255,215,0,0.49);
+}
+
+.card-1{
+  background-image: url("../img/film-1.jpg");
+    background-repeat: no-repeat;
+    background-size: 105%;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.card-2{
+  background-image: url("../img/film-2.jpg");
+    background-repeat: no-repeat;
+    background-size: 105%;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.card-3{
+  background-image: url("../img/film-3.jpg");
+    background-repeat: no-repeat;
+    background-size: 105%;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.card-4{
+  background-image: url("../img/film-4.jpg");
+    background-repeat: no-repeat;
+    background-size: 110%;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.card-5{
+  background-image: url("../img/film-5.jpg");
+    background-repeat: no-repeat;
+    background-size: 110%;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/*<------------------------------- CARDS TITLE PROPERTIES ------------------------------->*/
+
+.card-1 p{
+  /*background: #000;
+    background: rgba(0,0,0,0.6);*/ 
+    position: absolute;
+    color: white;
+    font-weight: bold;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px 0;
+    right: 0;
+    text-align: center;
+}
+
+.card-1 p:hover{
+  background: rgb(0,0,0);
+  background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(252,252,252,0) 100%);
+  color: #FFD700;
+  font-weight: bold;
+  transition: .4s;
+  transition-timing-function: ease;
+
+}
+
+.card-2 p{
+  /*background: #000;
+    background: rgba(0,0,0,0.6);*/ 
+    position: absolute;
+    color: white;
+    font-weight: bold;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px 0;
+    right: 0;
+    text-align: center;
+}
+
+.card-2 p:hover{
+  background: rgb(0,0,0);
+  background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(252,252,252,0) 100%);
+  color: #FFD700;
+  font-weight: bold;
+  transition: .4s;
+  transition-timing-function: ease;
+
+}
+
+.card-3 p{
+  /*background: #000;
+    background: rgba(0,0,0,0.6);*/ 
+    position: absolute;
+    color: white;
+    font-weight: bold;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px 0;
+    right: 0;
+    text-align: center;
+}
+
+
+.card-3 p:hover{
+  background: rgb(0,0,0);
+  background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(252,252,252,0) 100%);
+  color: #FFD700;
+  font-weight: bold;
+  transition: .4s;
+  transition-timing-function: ease;
+
+
+}
+
+.card-4 p{
+  /*background: #000;
+    background: rgba(0,0,0,0.6);*/ 
+    position: absolute;
+    color: white;
+    font-weight: bold;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px 0;
+    right: 0;
+    text-align: center;
+
+}
+
+.card-4 p:hover{
+  background: rgb(0,0,0);
+  background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(252,252,252,0) 100%);
+  color: #FFD700;
+  font-weight: bold;
+  transition: .4s;
+  transition-timing-function: ease;
+}
+
+.card-5 p{
+  /*background: #000;
+    background: rgba(0,0,0,0.6);*/ 
+    position: absolute;
+    color: white;
+    font-weight: bold;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px 0;
+    right: 0;
+    text-align: center;
+}
+
+.card-5 p:hover{
+  background: rgb(0,0,0);
+  background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(252,252,252,0) 100%);
+  color: #FFD700;
+  font-weight: bold;
+  transition: .4s;
+  transition-timing-function: ease;
+}
+
+
+/*<------------------------------- BUTTONS PROPERTIES ------------------------------->*/
+
+.btn{
+  background-color: rgba(255,255,255,0.0);
+  border: 2px solid #FFD700; 
+    color: rgba(255,255,255,0.8);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+
+}
+
+.btn:hover{
+  background-color:#FFD700; 
+  color: black;
+  transition-duration: 0.4s;
+
+}
+
+.btn-flex{
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+
+
+/*<------------------------------- BIRTHDAY SECTION ------------------------------->*/
+
+.section-bday{
+  display: flex;
+  margin-top: 40px;
+  align-content: center;
+
+}
+
+/* Section 1 */
+
+.section-bday .section-1 p{
+  text-align: center;
+  font-style: italic;
+  
+}
+
+.section-bday .section-1 h1{
+  text-transform: uppercase;
+}
+
+/* Section 2 */
+
+.section-bday .section-2 img{
+  width: 500px;
+}
+
+
+
+
+/*<---------------------------------------------------------------- PROJEKCIJE PAGE ---------------------------------------------------------------->*/
+
+.projekcija-container{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.flex-item{
+  width: 50%;
+  padding: 15px;
+  margin: 10px;
+  height: 180px;
+}
+
+.projekcija-container .icon-1{
+  background-image: url(../img/film-icon-1.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.projekcija-container .icon-2{
+  background-image: url(../img/film-icon-2.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.projekcija-container .icon-3{
+  background-image: url(../img/film-icon-3.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.projekcija-container .icon-4{
+  background-image: url(../img/film-icon-4.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.projekcija-container .icon-5{
+  background-image: url(../img/film-icon-5.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.projekcija-container .icon-6{
+  background-image: url(../img/film-icon-6.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.projekcija-container .icon-7{
+  background-image: url(../img/film-icon-7.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.projekcija-container .icon-8{
+  background-image: url(../img/film-icon-8.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.projekcija-container .icon-9{
+  background-image: url(../img/film-icon-9.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.projekcija-container .icon-10{
+  background-image: url(../img/film-icon-10.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.item-text{
+  margin-left: 130px;
+  letter-spacing: 1px;
+}
+
+.item-text a{
+  text-decoration: none;
+  color: #fff;
+}
+
+.item-text a:hover{
+  color: #FFD700;
+}
+
+.item-text-2 .btn{
+  margin-top: 5%;
+  width: 50%;
+}
+
+/* Show more button properties */
+
+#ShowMore{
+  display: none;
+}
+
+.showMoreBtn{
+  width: 30%;
+  height: 90px;
+  border:0;
+  margin-top: 20px;
+  font-size: 20px;
+  color: #FFD700;
+}
+
+/*<---------------------------------------------------------------- REZERVACIJA KARATA PAGE ---------------------------------------------------------------->*/
+
+.form-flex{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 40px;
+}
+
+.form-item{
+  width: 100%;
+  padding: 15px;  
+  background-color: rgb(0, 0, 26, 0.5);
+
+}
+
+form table{
+  display: flex;
+  flex-direction: column;
+}
+
+form table tr td{
+  padding: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+form table td{
+  width: 10%;
+  
+}
+
+.form-input{
+  width: 100%;
+  height: 35px;
+  font-size: 16px;
+  padding: 5px;
+  border: 2px solid #FFD700;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.form-input:focus{
+  outline: none;
+    border: 4px solid skyblue;
+}
+
+.form-radio{ 
+  margin-left: 13%;
+}
+
+
+/*<----------------------------------------------------------------  GALERIJA PAGE ---------------------------------------------------------------->*/
+
+
+.slides{
+  width: 1000px;
+  height: 500px;
+  display: block;
+  margin:  0 auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.slides *{
+  user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+}
+
+.slides input{
+  display: none;
+}
+
+.slides-container{
+  display: block;
+}
+
+.slide{
+  position: absolute;
+  opacity: 0;
+  display: inline-block;
+  transform: scale(0);
+  transition-duration: 0.3s ease-in-out;
+}
+
+.slide img{
+  width: 100%;
+  height: 100%;
+}
+
+.nav label{
+  width: 20%;
+  height: 100%;
+  position: absolute;
+  display: none;
+  opacity: 0;
+  z-index: 9;
+  transition: opacity 0.2s;
+  color: #FFF;
+  font-size: 156pt;
+  text-align: center;
+  line-height: 480px;
+  background-color: rgba(255,255,255,.3);
+  text-shadow: 0px 0px 15px rgb(119, 119, 119);
+}
+
+.slide:hover + .nav label{
+  opacity: 0.5;
+}
+
+.nav label:hover{
+  opacity: 1;
+}
+
+.nav .next{
+  color: rgba(255, 215, 0, 0.8);
+  right: 0;
+}
+
+.nav .prev{
+  color: rgba(255, 215, 0, 0.8);
+}
+
+input:checked + .slide-container .slide{
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 1s ease-in-out;
+}
+
+input:checked + .slide-container .nav label{
+  display: block;
+}
+
+.nav-dots{
+  width: 100%;
+  height: 14px;
+  position: absolute;
+  bottom: 9px;
+  display: block;
+  text-align: center;
+}
+
+.nav-dots .nav-dot{
+  position: relative;
+  top: -5px;
+  width: 14px;
+  height: 14px;
+  margin: 0 4px;
+  display: inline-block;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 100%;
+}
+
+.nav-dots .nav-dot:hover{
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+input#img-1:checked ~ .nav-dots label#img-dot-1,
+input#img-2:checked ~ .nav-dots label#img-dot-2,
+input#img-3:checked ~ .nav-dots label#img-dot-3,
+input#img-4:checked ~ .nav-dots label#img-dot-4,
+input#img-5:checked ~ .nav-dots label#img-dot-5,
+input#img-6:checked ~ .nav-dots label#img-dot-6{
+  background: rgba(255, 215, 0, 0.6);
+}
+
+
+
+
+
+
+/*<----------------------------------------------------------------  KONTAKT PAGE ---------------------------------------------------------------->*/
+
+
+
+.kont-flex{
+  display: flex;
+  justify-content: space-between;
+}
+
+.kont-items{
+  width: 49%;
+  padding: 15px;
+}
+
+.form-group{
+  padding: 15px;
+}
+
+.form-group input{
+  width: 100%;
+  height: 35px;
+  font-size: 16px;
+  padding: 5px;
+  border: 3px solid #FFD700;
+  border-radius: 10px;
+}
+
+.form-group textarea{
+  width: 100%;
+  height: 70px;
+  font-size: 16px;
+  padding: 5px;
+  border: 2px solid #FFD700;
+  border-radius: 10px;
+
+}
+
+.form-group input:focus{
+  outline: none;
+  border: 4px solid skyblue;
+}
+
+
+.kont-form button{
+  width: 100%;
+}
+
+.table-group{
+
+  height: 35px;
+  font-size: 16px;
+  border-radius: 10px;
+}
+
+.table-group  td{
+  border-bottom: 1px solid #fff;
+  width: 100%;
+  padding: 16px;
+}
+
+.mapEmbedded{
+  width: 100%;
+  height: 330px;
+  border: 0;
+  padding: 5px;
+}
+
+
+
+
+
+
+/*<----------------------------------------------------------------  O NAMA PAGE ---------------------------------------------------------------->*/
+
+
+.onama-flex{
+  display: flex;
+  justify-content: space-around;
+  
+}
+
+.onama-items{
+  width: 20%;
+  padding: 15px;
+  text-align: center;
+}
+
+.onama-items img{
+  width: 100%
+}
+
+.onama-banner{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.onama-text{
+  font-size: 18px;
+  font-style: italic;
+  text-indent: 30px;
+  padding: 15px;
+  text-align: center;
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+
+}
+
+.onama-items .item-1 .item-2 .item-3{
+  flex-direction: column;
+}
+
+
+
+/*<------------------------------- ZA REZERVISANE KARTE SECTION ------------------------------->*/
+
+
+.display{
+  width: 100%;
+}
+
+.display th{
+  border: 2px solid #FFD700;
+  padding:15px
+}
+
+.display td{
+  padding: 15px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+
+.readOn-flex{
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-around;
+
+}
+
+
+
+
+/*<------------------------------- FOOTER SECTION ------------------------------->*/
+
+footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer ul{
+  display: flex;
+  justify-content: flex-start;
+  list-style: none; 
+  margin-top: 50px;
+  margin-bottom: 20px;
+
+}
+
+footer ul li a{
+  padding: 0 20px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  margin-top: 200px;
+}
+
+footer  ul li a:hover{
+  color: #FFD700;
+}
+
+footer p a{
+  color: #fff;
+  letter-spacing: 10px;
+}
+
+footer p a:hover{
+  color: #FFD700;
+
+}
+
+
+
+
+

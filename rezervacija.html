@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/media-querys.css">
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap">
+	<script src="https://kit.fontawesome.com/020a02e8da.js" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<link rel="icon" href="img/title-icon.png" type="image/x-icon">
+
+
+
+
+	<title>Rezervacija | CINEMASTER Bioskop</title>
+</head>
+
+<body>
+	<div class="container">
+		<header>
+			<div class="logo">
+				<a href="index.html"><img src="img/logo.png" alt="logo"></a>
+			</div>
+			<nav>
+				<ul>
+					<li><a href="index.html">Početna</a></li>
+					<li><a href="projekcije.html">Projekcije</a></li>
+					<li><a href="galerija.html">Galerija</a></li>
+					<li><a href="kontakt.html">Kontakt</a></li>
+					<li><a href="onama.html">O&nbsp;nama</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<body>
+
+
+
+			<div class="form-flex">
+				<div class="form-item">
+
+					<form id="mojaForma" action="" method="post" onsubmit="singUp(event);">
+
+						<table>
+							<h1 class="formNaslov">Rezervacija karti</h1>
+							<tr>
+								<td><i class="fas fa-envelope" style="color: #FFD700;"></i> <label class="form-label"
+										for="mail">Email Adresa</label></td>
+								<td><input class="form-input" type="email" name="mail" id="mail"
+										placeholder="example@example.com" required></td>
+							</tr>
+							<tr>
+								<td><i class="fas fa-phone" style="color: #FFD700;"></i> <label class="form-label"
+										for="brTel">Broj Telefona</label></td>
+								<td><input class="form-input" type="tel" name="brTel" id="brTel"
+										placeholder="+38160/12-34-567"
+										pattern="[+][1-9]{3}[0-9]{2}/[0-9]{2}-[0-9]{2}-[0-9]{3}" required></td>
+								<!--- +38160/12-34-567)  --->
+							</tr>
+							<tr>
+								<td><i class="fas fa-ticket-alt" style="color: #FFD700;"></i> <label class="form-label"
+										for="brKarata">Broj Karata</label></td>
+								<td><input class="form-input" type="number" name="brKarata" id="brKarata" min="1"
+										max="5" required value="1"></input></td>
+							</tr>
+							<tr>
+								<td><i class="fas fa-film" style="color: #FFD700;"></i> <label class="form-label"
+										for="izborFilma">Naziv Filma</label></td>
+								<td><select id="izborFilma" name="izborFilma" class="form-input" required>
+										<option></option>
+										<option value="Scream">Scream</option>
+										<option value="Spider-Man: No Way Home">Spider-Man: No Way Home</option>
+										<option value="The Matrix Resurrections">The Matrix Resurrections</option>
+										<option value="Morbius">Morbius</option>
+										<option value="Dog">Dog</option>
+										<option value="Juzni Vetar - Ubrzanje">Juzni Vetar - Ubrzanje</option>
+										<option value="Zlatni Dečko">Zlatni Dečko</option>
+										<option value="The 355">The 355</option>
+										<option value="Dune">Dune</option>
+										<option value="The King's Man">The King's Man</option>
+									</select>
+							</tr>
+							<tr>
+								<td><i class="fas fa-clock" style="color: #FFD700;"></i> <label class="form-label"
+										for="radio">Vreme Projekcije</label>
+								<td>
+									<label class="form-radio"><input type="radio" id="radio17" name="radio"
+											value="17:00"> 17:00</label>
+									<label class="form-radio"><input type="radio" id="radio18" name="radio"
+											value="18:00"> 18:00</label>
+									<label class="form-radio"><input type="radio" id="radio19" name="radio"
+											value="19:00"> 19:00</label><br>
+									<label class="form-radio"><input type="radio" id="radio20" name="radio"
+											value="20:00"> 20:00</label>
+									<label class="form-radio"><input type="radio" id="radio21" name="radio"
+											value="21:00"> 21:00</label>
+									<label class="form-radio"><input type="radio" id="radio22" name="radio"
+											value="22:00"> 22:00</label><br>
+								</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td><button id="enterBtn" type="submit" class="btn" onclick="alertProvera();"><a
+											href="#" style="color: white;">Rezerviši kartu</a></button></td>
+							</tr>
+						</table>
+					</form>
+				</div>
+			</div>
+
+
+
+
+			<footer style="margin-top:10%;">
+
+				<ul>
+					<li><a href="#">Pocetna</a></li>
+					<li><a href="projekcije.html">Projekcije</a></li>
+					<li><a href="galerija.html">Galerija</a></li>
+					<li><a href="kontakt.html">Kontakt</a></li>
+					<li><a href="onama.html">O&nbsp;nama</a></li>
+				</ul>
+
+				<p style="margin-top: 25px;">
+					<a href="https://facebook.com/" target="_blank"><i class="fab fa-facebook-square fa-2x"></i></a>
+					<a href="https://www.instagram.com/" target="_blank"><i
+							class="fab fa-instagram-square fa-2x"></i></a>
+					<a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter-square fa-2x"></i></a>
+				</p>
+
+			</footer>
+
+
+
+	</div>
+</body>
+
+</html>

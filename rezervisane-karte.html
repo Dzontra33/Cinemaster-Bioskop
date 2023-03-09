@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/media-querys.css">
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap">
+	<script src="https://kit.fontawesome.com/020a02e8da.js" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<link rel="icon" href="img/title-icon.png" type="image/x-icon">
+
+
+	<title>Početna | CINEMASTER Bioskop</title>
+	<script type="text/javascript" src="js/main.js"></script>
+
+</head>
+
+<body>
+	<div class="container">
+		<header>
+			<div class="logo">
+				<a href="index.html"><img src="img/logo.png" alt="logo"></a>
+			</div>
+			<nav>
+				<ul>
+					<li><a href="index.html">Početna</a></li>
+					<li><a href="projekcije.html">Projekcije</a></li>
+					<li><a href="galerija.html">Galerija</a></li>
+					<li><a href="kontakt.html">Kontakt</a></li>
+					<li><a href="onama.html">O&nbsp;nama</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<body>
+			<table id="display" class="display">
+				<tr>
+					<th>E-Mail Adresa</th>
+					<th>Broj telefona</th>
+					<th>Broj karata</th>
+					<th>Naziv Filma</th>
+					<th>Vreme produkcije</th>
+				</tr>
+			</table>
+
+			<div class="readOn-flex">
+				<button id="btns" class="btn readOn-1" onclick="read(localStorage,keys,vals,display);">read local
+					storage</button>
+				<button id="btns" class="btn readOn-1" onclick="clearStorage();">Clear local
+					storage</button>
+			</div>
+
+
+
+
+			<footer style="margin-top:39%">
+
+				<ul>
+					<li><a href="index.html">Pocetna</a></li>
+					<li><a href="projekcije.html">Projekcije</a></li>
+					<li><a href="galerija.html">Galerija</a></li>
+					<li><a href="kontakt.html">Kontakt</a></li>
+					<li><a href="onama.html">O&nbsp;nama</a></li>
+				</ul>
+
+				<p style="margin-top: 25px;">
+					<a href="https://facebook.com/" target="_blank"><i class="fab fa-facebook-square fa-2x"></i></a>
+					<a href="https://www.instagram.com/" target="_blank"><i
+							class="fab fa-instagram-square fa-2x"></i></a>
+					<a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter-square fa-2x"></i></a>
+				</p>
+
+			</footer>
+
+
+
+	</div>
+</body>
+
+</html>

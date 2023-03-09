@@ -1,0 +1,723 @@
+/*<-------------------------------------------------------------- MEDIA QUERIES - < 992px -------------------------------------------------------------->*/
+@media only screen and (max-width: 992px){
+
+
+
+header{
+	display: block;
+}
+
+.proNaslov{
+	margin-top: 2.5%;
+}
+
+.logo img{
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+  	width: inherit;
+}
+
+nav{
+	display: flex;
+	justify-content: center;
+
+}
+
+
+.banner{
+	margin-top: 30px;
+	width: inherit;
+}
+
+.card-section{ 
+	flex-wrap: wrap;
+	max-width: 70%;
+	margin: 0 auto;
+}
+
+.card-section p{
+	font-size: 22px;
+}
+
+.section-bday{
+	display: block;
+}
+
+.section-bday h1{
+	text-align: center;
+}
+
+.section-bday p{
+	font-size:20px;
+	max-width: 90%;
+	margin-left: 5%;
+
+}
+
+.section-bday img{
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+  	width: inherit;
+
+}
+
+/* *Galerija* < 992px */
+
+
+.slides {
+	width: inherit;
+
+}
+
+
+/* *O nama* < 992px */
+
+.onama-banner{
+	width: 100%;
+}
+
+.onama-text{
+	font-size: 20px;
+}
+
+
+
+
+footer{
+	display: block;
+}
+
+footer ul{
+	justify-content: center;
+}
+
+footer ul li a{
+	font-size: 18px;
+}
+
+footer p{
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+}
+
+
+
+
+
+/*<-------------------------------------------------------------- MEDIA QUERIES - < 850px -------------------------------------------------------------->*/
+@media only screen and (max-width: 850px){
+
+
+
+header{
+	display: block;
+}
+
+
+.proNaslov{
+	margin-top: 2.5%;
+}
+
+.logo img{
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+  	width: inherit;
+}
+
+nav{
+	display: flex;
+	justify-content: center;
+
+}
+
+/* *Galerija* < 850px  */
+
+.slides{
+	width: 800px;
+	height: 400px;
+}
+
+.slides label{
+	width: 14%;
+	line-height: 350px;
+}
+
+/* *Rezervacija* */
+
+.form-radio{
+	margin-left: 7%;
+}
+
+
+
+}
+
+
+
+
+/*<-------------------------------------------------------------- MEDIA QUERIES - < 720px -------------------------------------------------------------->*/
+
+@media only screen and (max-width: 720px){
+
+header{
+	display: block;
+}
+
+
+.proNaslov{
+	margin-top: 2.5%;
+}
+
+.logo img{
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+  	width: inherit;
+}
+
+nav{
+	display: flex;
+	justify-content: center;
+
+}
+
+.banner .banner-caption{
+
+	width: inherit;
+}
+
+
+/* *Projekcije* < 720px */
+
+
+.projekcija-container .flex-item{
+	margin-bottom: 20px;
+	width: 100%;
+}
+
+.projekcija-container .flex-item h2{
+	font-size: 18px;
+
+}
+
+.projekcija-container .item-text{
+	font-size: 15px;
+}
+
+
+.projekcija-container .item-text-2{
+	font-size: 15px;
+}
+
+
+
+/* *Galerija* < 720px */
+
+.slides{
+	width: 700px;
+	height: 350px;
+}
+
+.slides label{
+	width: 10%;
+	line-height: 350px;
+}
+
+/* *Kontakt* < 720px */
+
+.kont-flex .kont-form{
+	font-size: 22px;
+}
+
+
+
+/* *O nama* < 720px */
+
+.onama-flex{
+	flex-direction: column;
+}
+
+.onama-items{
+	width: 40%;
+	padding: 15px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+/* *Rezervacija* */
+
+.form-radio{
+	margin-left: 5%;
+}
+
+
+
+
+
+}
+
+
+/*<------------------------------- MEDIA QUERIES - < 600px ------------------------------->*/
+
+@media only screen and (max-width: 600px){
+
+
+header{
+	display: block;
+}
+
+.proNaslov{
+	margin-top: 30%;
+
+}
+
+.logo img{
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+  	width: inherit;
+}
+
+nav{
+	display: flex;
+	justify-content: center;
+
+}
+
+nav ul{
+	display: block;
+	width: 100%;
+}
+
+nav ul li a{
+	text-align: center;
+	display: block;
+	padding: 5px;
+	border-bottom: 1px solid #FFD700;
+}
+
+nav ul li a:hover{
+	color: #FFD700;
+}
+
+nav ul li a::after{
+	display: none;
+}
+
+.banner{
+	margin-top: 30%;
+	width: inherit;
+}
+
+.card-section{ 
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+.card-section p{
+	font-size: 22px;
+}
+
+.section-bday{
+	display: block;
+}
+
+.section-bday h1{
+	font-size: 24px;
+	text-align: center;
+}
+
+.section-bday p{
+	font-size:22px;
+	max-width: 90%;
+	margin-left: 5%;
+
+}
+
+.section-bday .section-2 img{
+	width: 400px;
+
+}
+
+
+/* *Projekcije* < 600px */
+
+
+.projekcija-container {
+	flex-direction: column;
+	align-items: center;
+}
+
+.projekcija-container .flex-item{
+	width: 80%;
+}
+
+.projekcija-container .flex-item p{
+	font-size: 18px;
+}
+
+.projekcija-container .flex-item p{
+	font-size: 22px;
+}
+
+
+.projekcija-container .flex-item button{
+	width: 100%;
+}
+
+/* *Galerija* < 600px */
+
+.slides{
+	width: 600px;
+	height: 300px;
+}
+
+
+.slides label{
+	width: 10%;
+	font-size: 150px;
+	line-height: 250px;
+}
+
+
+/* *Kontakt* < 600px */
+
+.kont-flex{
+	flex-direction: column;
+}
+
+.kont-items{
+	width: 100%;
+}
+
+/* *O nama* < 600px */
+
+.onama-items{
+	width: 70%;
+	padding: 15px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* *Projekcije* < 600px */
+
+.form-flex{
+	margin-top: 40%;
+}
+
+footer ul{
+	display: flex;
+	text-align: center;
+}
+
+footer ul li a{
+	margin-top: 0;
+	padding: 5px;
+	font-size: 17px;
+}
+
+/* *Rezervacija* */
+
+.form-radio{
+	margin-left: 0;
+}
+
+
+
+
+
+/*<------------------------------- MEDIA QUERIES - < 500px ------------------------------->*/
+
+@media only screen and (max-width: 500px){
+
+
+
+header{
+	display: block;
+}
+
+.proNaslov{
+	margin-top: 40%;
+
+}
+
+.logo img{
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+  	width: inherit;
+}
+
+nav{
+	display: flex;
+	justify-content: center;
+
+}
+
+nav ul{
+	display: block;
+	width: 100%;
+}
+
+nav ul li a{
+	text-align: center;
+	display: block;
+	padding: 5px;
+	border-bottom: 1px solid #FFD700;
+}
+
+nav ul li a:hover{
+	color: #FFD700;
+}
+
+nav ul li a::after{
+	display: none;
+}
+
+.banner{
+	margin-top: 38%;
+	width: inherit;
+}
+
+.card-section{ 
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+.card-section p{
+	font-size: 22px;
+}
+
+.section-bday{
+	display: block;
+}
+
+.section-bday h1{
+	font-size: 24px;
+	text-align: center;
+}
+
+.section-bday p{
+	font-size:22px;
+	max-width: 90%;
+	margin-left: 5%;
+
+}
+
+.section-bday .section-2 img{
+	width: 300px;
+
+}
+
+
+/* *Projekcije* < 500px */
+
+
+.projekcija-container {
+	flex-direction: column;
+	align-items: center;
+}
+
+.projekcija-container .flex-item{
+	width: 90%;
+}
+
+.projekcija-container .flex-item p{
+	font-size: 18px;
+}
+
+.projekcija-container .flex-item button{
+	width: 100%;
+}
+
+/* *Galerija* < 500px */
+
+.slides{
+	width: 500px;
+	height: 300px;
+}
+
+.slide{
+	height: 300px;
+}
+
+.slides label{
+	width: 10%;
+	font-size: 150px;
+	line-height: 250px;
+}
+
+
+/* *Kontakt* < 500px */
+
+.kont-flex{
+	flex-direction: column;
+}
+
+.kont-items{
+	width: 100%;
+}
+
+/* *O nama* < 500px */
+
+.onama-items{
+	width: 70%;
+	padding: 15px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* *Projekcije* < 500px */
+
+.form-flex{
+	margin-top: 40%;
+}
+
+
+
+footer ul{
+	display: flex;
+	text-align: center;
+}
+
+footer ul li a{
+	margin-top: 0;
+	padding: 5px;
+	font-size: 17px;
+}
+
+
+
+
+
+
+
+
+
+
+
+}
+
+/*<------------------------------- MEDIA QUERIES - < 380px ------------------------------->*/
+@media only screen and (max-width: 380px){
+
+header{
+	display: block;
+}
+
+.proNaslov{
+	margin-top: 50%;
+
+}
+
+.logo img{
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+  	width: 350px;
+}
+
+nav{
+	display: flex;
+	justify-content: center;
+
+}
+
+nav ul{
+	display: block;
+	width: 100%;
+}
+
+nav ul li a{
+	text-align: center;
+	display: block;
+	padding: 5px;
+	border-bottom: 1px solid #FFD700;
+}
+
+nav ul li a:hover{
+	color: #FFD700;
+}
+
+nav ul li a::after{
+	display: none;
+}
+
+.banner{
+	margin-top: 50%;
+	width: inherit;
+}
+
+.section-bday h1{
+	font-size: 22px;
+	text-align: center;
+}
+
+.section-bday p{
+	font-size:20px;
+	max-width: 90%;
+	margin-left: 5%;
+
+}
+
+.projekcija-container .flex-item{
+	width: 90%;
+}
+
+.form-flex{
+	margin-top: 50%;
+}
+
+
+/* *Galerija* < 380px */
+
+.slides{
+	width: 350px;
+	height: 200px;
+}
+
+.slide{
+	height: 200px;
+}
+
+.slides label{
+	width: 10%;
+	font-size: 150px;
+	line-height: 250px;
+}
+
+
+/* *Projekcije* < 380px */
+
+
+.projekcija-container {
+	flex-direction: column;
+	align-items: center;
+}
+
+.projekcija-container .flex-item{
+	width: 95%;
+}
+
+.projekcija-container .flex-item button{
+	width: 100%;
+}
+
+.projekcija-container .flex-item p{
+	font-size: 16px;
+}
+
+
+
+
+}
+}
